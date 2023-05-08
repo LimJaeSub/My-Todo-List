@@ -1,0 +1,18 @@
+.calendarwrap{
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-calendar{
+    border:none;
+    border-radius:30px;
+    background-color:#CBF1F5;
+    font-family: "Jua";
+}
+
+.react-calendar>*:hover{
+    background-color: none;
+}
