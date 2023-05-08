@@ -11,8 +11,6 @@
     border-radius:30px;
     background-color:#CBF1F5;
     font-family: "Jua";
+    width:90%
 }
 
-.react-calendar>*:hover{
-    background-color: none;
-}

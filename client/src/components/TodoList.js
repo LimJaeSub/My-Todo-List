@@ -6,9 +6,12 @@ const Todo = styled.div`
   border-radius: 30px;
   background-color: #8785a2;
   width: 80%;
+  height: 150px;
+  line-height: 150px;
+  font-family: "Jua";
 `;
 function TodoList() {
-  return <Todo>123456789</Todo>;
+  return <Todo>냉무</Todo>;
 }
 
 export default TodoList;

@@ -5,6 +5,8 @@ const SearchBarWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 25%;
 `;
 const Style = styled.input`
   border: none;

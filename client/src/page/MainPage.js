@@ -54,7 +54,15 @@ const TopicDiv = styled.div`
   font-size: 25px;
   font-family: "Jua";
 `;
-const ListDiv = styled.div``;
+const ListDiv = styled.div`
+  width: 100%;
+  height: 70%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 function MainPage() {
   return (
@@ -70,9 +78,12 @@ function MainPage() {
       </SideNav>
       <ContentSection>
         <SearchBar />
-        <div>
+        <ListDiv>
           <TodoList />
-        </div>
+          <TodoList />
+          <TodoList />
+          {/* TodoList는 배열로 따서 구현할 것 */}
+        </ListDiv>
       </ContentSection>
     </MainPageWrap>
   );
