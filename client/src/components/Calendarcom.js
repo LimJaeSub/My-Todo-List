@@ -10,8 +10,10 @@ const TodayDiv = styled.div`
   background-color: #71c9ce;
   text-align: center;
   width: 70%;
-  height: 30px;
-  line-height: 30px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
   font-family: "Jua";
 `;

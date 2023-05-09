@@ -33,7 +33,7 @@ const ContentSection = styled.section`
 `;
 const TopicList = styled.div`
   width: 100%;
-  height: 50%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -60,7 +60,7 @@ const ListDiv = styled.div`
   margin-bottom: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
 `;
 

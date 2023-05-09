@@ -23,6 +23,7 @@ const Startbtn = styled.button`
   font-size: 40px;
   color: white;
   font-family: "Jua";
+  cursor: "pointer";
 `;
 
 function StartPage() {

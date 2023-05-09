@@ -17,6 +17,7 @@ const Style = styled.input`
   margin-top: 20px;
   font-size: 40px;
   font-family: "Jua";
+  padding-left: 3%;
 `;
 
 function SearchBar() {
