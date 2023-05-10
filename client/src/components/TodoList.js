@@ -9,24 +9,62 @@ const Todo = styled.div`
   height: 150px;
   font-family: "Jua";
   margin-left: 3%;
+  padding-left: 3%;
+  display: flex;
+  justify-content: space-between;
 `;
-const whatTodo = styled.div``;
+
+const TodoLeft = styled.div`
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
+const TodoWhat = styled.div`
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+`;
+const TodoTime = styled.div`
+  height: 40%;
+  display: flex;
+  align-items: center;
+`;
+const TodoRight = styled.div`
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  margin-right: 5%;
+`;
+const SelectBox = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  height: 35%;
+`;
+const CheckBox = styled.div`
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+`;
+
 function TodoList() {
   return (
     <Todo>
-      <div className="Todoleft">
-        <div>
-          <div>여기내용임</div>
-          <div>여기시간</div>
-        </div>
-      </div>
-      <div className="TodoRight">
-        <div className="selectbox">
+      <TodoLeft>
+        <TodoWhat>여기내용임</TodoWhat>
+        <TodoTime>여기시간</TodoTime>
+      </TodoLeft>
+      <TodoRight>
+        <SelectBox>
           <div>삭제</div>
           <div>수정</div>
-        </div>
-        <div>체크박스</div>
-      </div>
+        </SelectBox>
+        <CheckBox>체크박스</CheckBox>
+      </TodoRight>
     </Todo>
   );
 }
