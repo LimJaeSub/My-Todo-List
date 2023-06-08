@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Calendarcom from "../components/Calendarcom";
 import SearchBar from "../components/SearchBar";
 import TodoList from "../components/TodoList";
+import AddTodoButton from "../components/AddTodoButton";
 
 const MainPageWrap = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ const SideNav = styled.section`
   justify-content: space-evenly;
 `;
 const ContentSection = styled.section`
+  position: relative;
   background-color: #393e46;
   border: none;
   border-radius: 30px;
@@ -34,12 +36,15 @@ const ContentSection = styled.section`
 const TopicList = styled.div`
   width: 100%;
   height: 70%;
-  display: flex;
+  margin-top: 10px;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center; */
 `;
 const TopicDiv = styled.div`
+  margin: 0 auto;
+  margin-bottom: 20px;
   border: none;
   border-radius: 30px;
   background: #eaeaea;
@@ -77,6 +82,7 @@ function MainPage() {
         </TopicList>
       </SideNav>
       <ContentSection>
+        <AddTodoButton />
         <SearchBar />
         <ListDiv>
           <TodoList />
